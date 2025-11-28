@@ -36,6 +36,6 @@ server = ModularServer(
 )
 
 # Critical for Render/Heroku/etc.
-port = int(os.environ.get('PORT', 10000))  # Default to 10000 if not set
+port = int(os.environ.get("PORT", 8521))
 server.port = port
-server.launch(host="0.0.0.0", port=port)
+server.launch()
